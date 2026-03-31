@@ -8,21 +8,21 @@ export default function Services() {
       title: "Personal Storage",
       description: "Perfect for moving, decluttering, or seasonal items. Various indoor unit sizes available.",
       features: ["Climate Controlled", "24/7 Access", "Month-to-Month"],
-      image: "ChatGPT Image Mar 30, 2026, 07_23_17 PM.png",
+      image: "chatgpt-image-3.png",
     },
     {
       icon: <Briefcase size={40} className="text-accent" />,
       title: "Business Storage",
       description: "Secure space for inventory, documents, or equipment. Flexible terms for growing businesses.",
       features: ["Deliveries Accepted", "Large Units", "Gated Security"],
-      image: "ChatGPT Image Mar 30, 2026, 07_22_41 PM.png",
+      image: "chatgpt-image-2.png",
     },
     {
       icon: <Truck size={40} className="text-accent" />,
       title: "Car and Boat Storage",
       description: "Spacious outdoor and covered options for cars, trucks, trailers, boats, and vehicles.",
       features: ["Wide Driveways", "Convenient Access", "Secure Perimeter"],
-      image: "ChatGPT Image Mar 30, 2026, 07_19_17 PM.png",
+      image: "chatgpt-image-1.png",
     },
   ];
 
@@ -38,7 +38,7 @@ export default function Services() {
             Storage That Fits Your Life
           </h2>
           <p className="text-lg text-gray-600">
-            Whether you're moving across town or need a safe place for your 
+            Whether you're moving across town or need a safe place for your
             business inventory, we have the space you need.
           </p>
         </div>
