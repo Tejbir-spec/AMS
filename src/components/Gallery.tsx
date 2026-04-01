@@ -8,7 +8,7 @@ export default function Gallery() {
       category: "Security"
     },
     {
-      url: "https://picsum.photos/seed/storage2/800/600",
+      url: "office.png",
       title: "Clean Storage Corridors",
       category: "Facility"
     },
