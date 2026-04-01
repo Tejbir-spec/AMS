@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 export default function Gallery() {
   const images = [
     {
-      url: "https://picsum.photos/seed/storage1/800/600",
+      url: "gated.png",
       title: "Secure Gated Entrance",
       category: "Security"
     },
