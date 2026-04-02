@@ -48,7 +48,7 @@ export default function Header({ onViewChange, currentView }: HeaderProps) {
             </span>
           </div>
           <div className="flex items-center gap-4">
-            <span className={`font-semibold transition-colors duration-300 ${isScrolled ? "text-primary" : "text-white"}`}>24/7 Access Available</span>
+            <span className={`font-semibold transition-colors duration-300 ${isScrolled ? "text-primary" : "text-white"}`}>Now Serving Jonesboro Harrisburg and surrounding areas</span>
           </div>
         </div>
       </div>
