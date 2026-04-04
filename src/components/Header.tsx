@@ -47,8 +47,9 @@ export default function Header({ onViewChange, currentView }: HeaderProps) {
               5173 AR 1 Jonesboro, Arkansas
             </span>
           </div>
-          <div className="flex items-center gap-4">
-            <span className={`font-semibold transition-colors duration-300 ${isScrolled ? "text-primary" : "text-white"}`}>Now Serving Jonesboro Harrisburg and surrounding areas</span>
+          <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 px-4 py-1 rounded-full text-accent font-semibold text-sm">
+                          <span className="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+                          Now Serving Jonesboro Harrisburg and surrounding areas
           </div>
         </div>
       </div>
