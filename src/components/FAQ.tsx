@@ -24,7 +24,7 @@ export default function FAQ() {
     },
     {
       question: "How do I pay my rent?",
-      answer: "We make payments easy! You can pay online through our secure portal, set up automatic monthly payments, or pay in person at our office during business hours.",
+      answer: "We take security seriously. Our facility is fully fenced and gated, equipped with 24-hour video surveillance, and on-site management during office hours.",
     },
     {
       question: "Do you offer climate-controlled units?",
