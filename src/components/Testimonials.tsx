@@ -86,14 +86,7 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Google Reviews Badge */}
-        <div className="mt-16 flex flex-col items-center justify-center gap-4">
-          <div className="flex items-center gap-2 bg-white text-primary px-6 py-2 rounded-full font-bold shadow-lg">
-            <img src="https://www.google.com/favicon.ico" alt="Google" className="w-4 h-4" />
-            <span>4.9 / 5.0 on Google Reviews</span>
-          </div>
-          <p className="text-sm text-gray-400">Based on 150+ verified customer reviews</p>
-        </div>
+       
       </div>
     </section>
   );
