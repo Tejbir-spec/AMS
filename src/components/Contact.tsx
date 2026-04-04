@@ -24,7 +24,7 @@ export default function Contact() {
     {
       icon: <Clock className="text-accent" size={24} />,
       title: "Office Hours",
-      value: "Mon-Sat: 9AM - 6PM",
+      value: "Mon-Fri: 10AM - 4PM (By Appointment)",
       href: "#",
     },
   ];
