@@ -86,7 +86,7 @@ export default function Header({ onViewChange, currentView }: HeaderProps) {
         <div className="hidden md:flex items-center gap-8">
           {currentView === 'landing' ? (
             <>
-              {navLinks.map((link) => (
+              {navLinks.map((link) => (<a>
                 
                   key={link.name}
                   href={link.href}
@@ -129,7 +129,7 @@ export default function Header({ onViewChange, currentView }: HeaderProps) {
             <div className="container-custom py-6 flex flex-col gap-4">
               {currentView === 'landing' ? (
                 <>
-                  {navLinks.map((link) => (
+                  {navLinks.map((link) => (<a>
                     
                       key={link.name}
                       href={link.href}
