@@ -133,7 +133,7 @@ export default function Header({ onViewChange, currentView }: HeaderProps) {
                       href={link.href}
                       className="text-lg font-medium text-gray-700 hover:text-accent"
                       onClick={() => setIsMenuOpen(false)}>
-                    >
+                  
                       {link.name}
                     </a>
                   ))}
