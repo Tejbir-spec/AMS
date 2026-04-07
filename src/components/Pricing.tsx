@@ -101,6 +101,7 @@ export default function Pricing() {
     <span className="text-gray-500 text-sm">— Standard outdoor units</span>
   </div>
 </div>
+        </div>
        {/* Climate Controlled */}
 <div className="mb-16">
   <div className="flex items-center gap-2 mb-8">
