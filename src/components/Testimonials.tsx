@@ -4,26 +4,20 @@ import { Star, Quote, User } from "lucide-react";
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "Local Resident",
-      content: "American Storage made my move so much easier. The staff was incredibly helpful, and the facility is spotless and secure. I highly recommend them!",
+      name: "Collin Williams",
+      role: "Williams Windshield Repair — Non-Climate Control Customer for over 5 years",
+      content: "American Mini Storage has been economical, convenient for having business supplies dropped off, secure, and spacious enough to hold quite a bit of inventory for me as a local business owner. AMS has bent over backwards for me on a few things and have always taken care of my needs. I would recommend them for all your storage. You can't go wrong with these people.",
       rating: 5,
-      avatar: "https://i.pravatar.cc/150?u=sarah"
+      avatar: null,
     },
     {
-      name: "Michael Davis",
-      role: "Business Owner",
-      content: "We've been using their business storage for over a year now. The 24/7 access is a game-changer for our inventory management. Great service!",
+      name: "Glenda Newsom",
+      role: "Jonesboro Resident — Climate Control Customer for 10 years",
+      content: "I have been an American Mini Storage customer for 10 years. I can honestly say they've been more than just a storage service — they have been consistent, reliable, and genuinely supportive. The units are great size for the price, which is hard to find these days. Everything is well-kept and I have felt confident storing my belongings. What really sets AMS apart is their customer service. If you ever run into a problem, they are willing to work with you instead of against you and that means a lot. A special shout out to Ms. Misty... She is truly a jewel to this company. Her kindness, professionalism, and willingness to help make all the difference. It's a rare find!",
       rating: 5,
-      avatar: "https://i.pravatar.cc/150?u=michael"
+      avatar: null,
     },
-    {
-      name: "Emily Wilson",
-      role: "Car Owner",
-      content: "Finding a safe place for our car was a priority. The outdoor storage here is spacious and the gated access gives us peace of mind. Excellent experience.",
-      rating: 5,
-      avatar: "https://i.pravatar.cc/150?u=emily"
-    },
+  
   ];
 
   return (
@@ -48,7 +42,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
