@@ -90,9 +90,7 @@ export default function Header({ onViewChange, currentView }: HeaderProps) {
                 
                   key={link.name}
                   href={link.href}
-                  className={`font-medium hover:text-accent transition-colors ${
-                    isScrolled ? "text-gray-700" : "text-gray-700 md:text-white"
-                  }`}
+                  className={`font-medium hover:text-accent transition-colors ${isScrolled ? "text-gray-700" : "text-gray-700 md:text-white"}`}>
                 >
                   {link.name}
                 </a>
@@ -134,7 +132,7 @@ export default function Header({ onViewChange, currentView }: HeaderProps) {
                       key={link.name}
                       href={link.href}
                       className="text-lg font-medium text-gray-700 hover:text-accent"
-                      onClick={() => setIsMenuOpen(false)}
+                      onClick={() => setIsMenuOpen(false)}>
                     >
                       {link.name}
                     </a>
