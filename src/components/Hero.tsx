@@ -11,7 +11,7 @@ export default function Hero({ onManageStorage }: HeroProps) {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="storefront.png"
+          src="front.png"
           alt="American Mini-Storage Facility"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
