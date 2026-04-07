@@ -28,7 +28,7 @@ export default function Gallery() {
       category: "Security"
     },
     {
-      url: "drive.png",
+      url: "gate.png",
       title: "Secure Gated Entrance",
       category: "Convenience"
     }
