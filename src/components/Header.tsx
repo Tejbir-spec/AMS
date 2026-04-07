@@ -34,22 +34,22 @@ export default function Header({ onViewChange, currentView }: HeaderProps) {
         isScrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
       }`}
     >
-      {/* Top Bar (Only visible on large screens) */}
+      {/* Top Bar */}
       <div className={`hidden md:block border-b pb-2 mb-2 transition-colors duration-300 ${isScrolled ? "border-gray-100" : "border-white/10"}`}>
-        <div className={`container-custom flex justify-between items-center text-sm transition-colors duration-300 ${isScrolled ? "text-accent" : "text-white"}`}>
+        <div className="container-custom flex justify-between items-center text-sm text-accent">
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1">
-              <Phone size={14} className={isScrolled ? "text-accent" : "text-white"} />
+              <Phone size={14} className="text-accent" />
               (870) 275-1643
             </span>
             <span className="flex items-center gap-1">
-              <MapPin size={14} className={isScrolled ? "text-accent" : "text-white"} />
+              <MapPin size={14} className="text-accent" />
               5173 AR 1 Jonesboro, Arkansas
             </span>
           </div>
           <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 px-4 py-1 rounded-full text-accent font-semibold text-sm">
-                          <span className="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
-                          Now Serving Jonesboro Harrisburg and surrounding areas
+            <span className="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+            Now Serving Jonesboro Harrisburg and surrounding areas
           </div>
         </div>
       </div>
@@ -57,24 +57,37 @@ export default function Header({ onViewChange, currentView }: HeaderProps) {
       <nav className="container-custom flex justify-between items-center">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2 group">
-          <a href="#home" className="flex items-center gap-2 group">
-  <img src="logo.png" alt="AMS Logo" className="w-14 h-10 object-contain" />
-  <div className="flex flex-col">
-    <span className={`font-bold text-xl leading-none ${isScrolled ? "text-primary" : "text-primary md:text-white"}`}>
-      AMERICAN
-    </span>
-    <span className={`font-semibold text-sm tracking-widest ${isScrolled ? "text-accent" : "text-accent md:text-red-200"}`}>
-      MINI-STORAGE
-    </span>
-  </div>
-</a>
+          <div className="w-14 h-10 relative bg-primary flex items-center justify-center rounded-sm transform group-hover:rotate-3 transition-transform overflow-hidden shadow-md">
+            <div className="absolute inset-0 flex flex-col">
+              {[...Array(7)].map((_, i) => (
+                <div key={i} className={`flex-1 ${i % 2 === 0 ? 'bg-[#B22234]' : 'bg-white'}`}></div>
+              ))}
+            </div>
+            <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-[#3C3B6E] flex items-center justify-center">
+              <div className="grid grid-cols-3 gap-0.5">
+                {[...Array(6)].map((_, i) => (
+                  <div key={i} className="w-0.5 h-0.5 bg-white rounded-full"></div>
+                ))}
+              </div>
+            </div>
+            <span className="relative z-10 text-yellow-400 font-black text-xl drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">AMS</span>
+          </div>
+          <div className="flex flex-col">
+            <span className={`font-bold text-xl leading-none ${isScrolled ? "text-primary" : "text-primary md:text-white"}`}>
+              AMERICAN
+            </span>
+            <span className={`font-semibold text-sm tracking-widest ${isScrolled ? "text-accent" : "text-accent md:text-red-200"}`}>
+              MINI-STORAGE
+            </span>
+          </div>
+        </a>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {currentView === 'landing' ? (
             <>
               {navLinks.map((link) => (
-                <a
+                
                   key={link.name}
                   href={link.href}
                   className={`font-medium hover:text-accent transition-colors ${
@@ -84,7 +97,6 @@ export default function Header({ onViewChange, currentView }: HeaderProps) {
                   {link.name}
                 </a>
               ))}
-              
             </>
           ) : (
             <button
@@ -118,7 +130,7 @@ export default function Header({ onViewChange, currentView }: HeaderProps) {
               {currentView === 'landing' ? (
                 <>
                   {navLinks.map((link) => (
-                    <a
+                    
                       key={link.name}
                       href={link.href}
                       className="text-lg font-medium text-gray-700 hover:text-accent"
@@ -127,7 +139,6 @@ export default function Header({ onViewChange, currentView }: HeaderProps) {
                       {link.name}
                     </a>
                   ))}
-                  
                 </>
               ) : (
                 <button
