@@ -47,7 +47,7 @@ export default function Hero({ onManageStorage }: HeroProps) {
             <div className="bg-white p-6 md:p-8 rounded-sm shadow-2xl border-t-4 border-accent max-w-xl">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
                 <div>
-                  <h3 className="text-2xl font-bold text-primary">Reserve Your Unit</h3>
+                  <h3 className="text-2xl font-bold text-primary">Units Available</h3>
                   <p className="text-gray-600 text-sm">Lock in our best rates today.</p>
                 </div>
                 <div className="text-left md:text-right">
